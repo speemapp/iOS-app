@@ -57,10 +57,18 @@ struct LoginView: View {
     
     private func handleLogin() {
         if isLoginMode {
-            print("Logging in..")
+            login()
         } else {
-            print("Creating a new account")
+            createNewAccount()
         }
+    }
+    
+    private func createNewAccount() {
+        print("Creating a new account")
+    }
+    
+    private func login() {
+        print("Logging in..")
     }
 }
 
